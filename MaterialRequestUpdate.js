@@ -1,6 +1,7 @@
 // Velo API Reference: https://www.wix.com/velo/reference/api-overview/introduction
 import wixData from 'wix-data';
 import { authentication, currentMember } from 'wix-members';
+import wixWindow from 'wix-window';
 
 $w.onReady(function () {
     $w('#requestDataset').onReady(() => {
@@ -83,6 +84,12 @@ export function UpdateData(event) {
     wixData.update("support03", toUpdate)
         .then((results) => {
             console.log(results); //see item below
+
+                var currentItem = $w('#requestDataset').getCurrentItem()
+
+                wixWindow.openLightbox("Request Updated", {
+                    "currentItem": currentItem,
+                })
         })
         .catch((err) => {
             console.log(err);
