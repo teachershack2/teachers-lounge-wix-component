@@ -42,3 +42,8 @@ We created two separate databases. Further explanation of these database can be 
 ![image](/ScreenShots/wixscreenshots/backendpreprocessing.png)
 
 We added some backend preprocessing scripts for updating data in the database.
+
+### Forum set up
+![image](/ScreenShots/wixscreenshots/settingupforum.png)
+
+We set up the differnt forum categories in the settings
