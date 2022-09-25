@@ -22,7 +22,13 @@ export function submitOffer(event) {
         .then((item) => {
             console.log(item); //see item below
 
-            $w('#group1').show()
+            let animOptions = {
+                "duration": 300,
+                "delay": 0
+            };
+
+            $w("#group1").show("puff", animOptions);
+
         })
         .catch((err) => {
             console.log(err);
