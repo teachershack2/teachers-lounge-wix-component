@@ -76,7 +76,7 @@ export function acceptOfferButton_click(event) {
     wixData.update("support03", toUpdate)
         .then((results) => {
             console.log(results); //see item below
-            wixLocation.to("https://cyberyeet123.wixsite.com/teaching-materials/request/offers/" + currentItem._id);
+            wixLocation.to("https://cyberyeet123.wixsite.com/teachers-lounge/request/offers/" + currentItem._id);
         })
         .catch((err) => {
             console.log(err);
@@ -104,7 +104,7 @@ export function offerCancelButton_click(event) {
     wixData.update("support03", toUpdate)
         .then((results) => {
             console.log(results); //see item below
-            wixLocation.to("https://cyberyeet123.wixsite.com/teaching-materials/request/offers/" + currentItem._id);
+            wixLocation.to("https://cyberyeet123.wixsite.com/teachers-lounge/request/offers/" + currentItem._id);
         })
         .catch((err) => {
             console.log(err);
